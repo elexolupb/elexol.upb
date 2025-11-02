@@ -13,6 +13,16 @@
     --gradient: linear-gradient(135deg, #ff0099 0%, #cc00ff 50%, #0066ff 100%);
 }
 
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add padding to sections so they don't hide behind fixed headers */
+section[id], div[id] {
+    scroll-margin-top: 80px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -169,7 +179,7 @@ nav a:hover, nav a.active {
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 0, 153, 0.3);
     animation: fadeInUp 1s ease 0.4s both;
 }
